@@ -164,3 +164,79 @@ header {
 .play-icon {
     font-size: 18px;
 }
+.ideas {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.ideas-container {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.heading-center {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ideas-heading h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #001931;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.ideas-heading p {
+    font-size: 18px;
+    color: #627382;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.ideas-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.ideas-card {
+    background: #ffffff;
+    padding: 60px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    text-align: center;
+   
+}
+
+
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #F95555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px;
+}
+
+.icon-circle img {
+    width: 28px; 
+    height: auto;
+}
+
+.ideas-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.ideas-card p {
+    font-size: 16px;
+    color: #627382;
+    line-height: 1.5;
+}

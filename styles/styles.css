@@ -318,3 +318,74 @@ header {
     height: 22px;
     margin-top: 2px; 
 }
+#explore-more {
+    padding: 120px 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.explore-container {
+    width: 1360px;
+    background-color: #F7F6F2;
+    border-radius: 24px; 
+    padding: 80px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; 
+}
+
+.explore-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #001931;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.explore-description {
+    font-size: 18px;
+    color: #627382;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.explore-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.explore-cta .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background-color: #469165;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-cta .btn-primary:hover {
+    background-color: #30B868;
+}
+
+.explore-cta .btn-primary img {
+    width: 20px; 
+    height: 20px;
+}
+
+.cta-note {
+    font-size: 14px;
+    color: #627382;
+    margin: 0;
+}

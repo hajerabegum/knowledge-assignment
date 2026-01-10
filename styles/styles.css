@@ -11,7 +11,7 @@
     box-sizing: border-box; 
 }
 
-.inter {
+.Inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
@@ -20,9 +20,7 @@
 header {
     padding: 16px 0; 
     background-color: #ffffff; 
-    width: 100%;
-    top: 0;
-   
+    width: 100%;  
 }
 
 /* NAV*/
@@ -32,13 +30,15 @@ header {
     align-items: center; 
     width: 1360px;
     margin: 0 auto;
+  
+ 
    
 }
 
 /* LOGO */
 .logo img {
     display: block;
-    height: 40px; 
+    height: 60px; 
   
 }
 
@@ -47,6 +47,7 @@ header {
     display: flex; 
     list-style: none; 
     gap: 32px; 
+    color:#000000;
 }
 
 
@@ -56,52 +57,57 @@ header {
     font-size: 16px;
     font-weight: 500; 
     color: #001931; 
-    transition: color 0.3s ease; 
+    
 }
 
-.link-parent li a:hover {
-    color: #469165; 
-}
+
 
 /* CALL-TO-ACTION BUTTON */
 .my-btn {
     padding: 12px 24px;
     border-radius: 8px; 
-    background-color: #469165; 
+    background-color: #469165;
     color: #ffffff; 
     font-size: 16px;
     font-weight: 600;
-    line-height: 1.2; 
+    line-height: 19px; 
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.my-btn:hover {
-    background-color: #30B868;
+.hover-color:hover {
+    background-color:greenyellow;
 }
 
-/* hero start */.hero {
+/* hero start */
+
+.hero {
   height: 674px;
   width: 100%;
   background:
     linear-gradient(
-      rgba(6, 20, 32, 0.65),
-      rgba(6, 20, 32, 0.65)
+      rgba(6, 20, 32, 0.059),
+      rgba(6, 20, 32, 0.101)
     ),
     url("../assets/hero-bg.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+   
+ 
 }
 
 .hero-content {
+
   max-width: 1360px;
   padding: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
+
+
 }
 
 /* Badge */
@@ -129,9 +135,9 @@ header {
 .hero-title {
   font-size: 72px;
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 84px;
   color: #ffffff;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .hero-title span {
@@ -140,11 +146,13 @@ header {
 
 /* Description */
 .hero-text {
-  max-width: 860px;
+ 
   font-size: 18px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 32px;
+ 
 }
 
 /* Buttons */
@@ -154,37 +162,34 @@ header {
   align-items: center;
 }
 
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 32px;
-  background: #30b868;
+  padding: 12px 16px;
+  background-color: #30b868;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.btn-primary img {
-  width: 16px;
-}
 
 .btn-secondary {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 28px;
-  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 16px;
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  backdrop-filter: blur(6px);
+  background: none;
 }
 
 .play-icon {
@@ -192,10 +197,10 @@ header {
 }
 
 
-/* ================= IDEAS SECTION ================= */
+/*Ideas*/
 
 .ideas {
-  padding: 80px 0;
+  padding: 120px 0;
   background-color: #ffffff;
 }
 
@@ -203,50 +208,51 @@ header {
   max-width: 1360px;
   margin: 0 auto;
   padding-inline: 24px;
+
 }
 
 /* Heading */
 .ideas-heading {
   text-align: center;
-  margin-bottom: 48px;
+margin-bottom: 48px;
+color: #001931;
+gap: 16px;
 }
 
 .ideas-heading h2 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 58px; /* matches Figma */
+  line-height: 58px;
   color: #001931;
-  margin-bottom: 16px;
+ 
 }
 
 .ideas-heading p {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 20px;
   color: #627382;
 }
 
 /* Cards Layout */
 .ideas-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 24px;
 }
 
 /* Card */
 .ideas-card {
-  background-color: #ffffff;
-  padding: 40px 24px;
+  background: rgba(255, 255, 255, 1);
+  padding: 24px;
   text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.115);
+
 }
 
 /* Icon */
 .icon-circle {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #F95555;
   display: flex;
@@ -262,7 +268,7 @@ header {
 
 /* Text */
 .ideas-card h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: #001931;
   margin-bottom: 12px;
@@ -270,8 +276,9 @@ header {
 
 .ideas-card p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   color: #627382;
+
 }
 
 #solution {
@@ -285,13 +292,14 @@ header {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    gap: 80px; 
+    gap: 60px; 
 }
 
 .soln-img {
     flex: 1;
     display: flex;
     justify-content: center;
+    
 }
 
 .soln-img img {
@@ -308,22 +316,23 @@ header {
 }
 
 .soln-tag {
-    color: #30B868;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+
+    font-size: 16px;
+    font-weight: 500;
     display: block;
+    color: #30B868;
 }
 
 .soln-notes h2 {
     font-size: 48px;
     font-weight: 700;
     color: #001931;
-    line-height: 1.2;
+    line-height: 58px;
+    text-transform: capitalize;
 }
 
 .soln-notes p {
-    font-size: 18px;
+    font-size: 16px;
     color: #627382;
     line-height: 1.6;
     margin-bottom: 10px;
@@ -334,7 +343,7 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .soln-list li {
@@ -344,14 +353,16 @@ header {
     font-size: 16px;
     font-weight: 500;
     color: #001931;
-    line-height: 1.4;
+    line-height: 20px;
 }
 
 .soln-list li img {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     margin-top: 2px; 
 }
+
+
 #explore-more {
     padding: 120px 0;
     background-color: #ffffff;
@@ -362,7 +373,7 @@ header {
 .explore-container {
     width: 1360px;
     background-color: #F7F6F2;
-    border-radius: 24px; 
+    border-radius: 12px; 
     padding: 80px 40px;
     text-align: center;
     display: flex;
@@ -372,17 +383,15 @@ header {
 }
 
 .explore-heading {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
-    color: #001931;
-    margin: 0;
-    line-height: 1.2;
+    line-height: 48px;
 }
 
 .explore-description {
-    font-size: 18px;
+    font-size: 16px;
     color: #627382;
-    line-height: 1.6;
+    line-height: 24px;
     margin: 0;
 }
 
@@ -398,19 +407,18 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 16px 32px;
+    padding: 16px;
     background-color: #469165;
     color: #ffffff;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .explore-cta .btn-primary:hover {
-    background-color: #30B868;
+    background-color:greenyellow;
 }
 
 .explore-cta .btn-primary img {
@@ -440,7 +448,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 84px;
 }
 
 .social {
@@ -448,26 +456,27 @@ header {
 }
 
 .social p {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
 .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     justify-content: flex-end;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 .footer-divider {
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.823);
     margin-bottom: 30px;
+    opacity: 0.2;
 }
 
 .footer-bottom {
@@ -475,6 +484,6 @@ header {
 }
 
 .footer-bottom p {
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
 }
